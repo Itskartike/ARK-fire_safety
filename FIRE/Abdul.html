@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireGuard India - Your Safety is Our Priority</title>
+    <meta name="description" content="Leading fire safety solutions provider in India. We offer high-quality fire safety equipment, installation, and maintenance services.">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .language-switch {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            z-index: 50;
+        }
+        .carousel {
+            scroll-behavior: smooth;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        #p2{
+            background-image: url("fire3.jpg");
+            background-position: center;
+            background-size: 70%;
+            background-repeat: no-repeat;
+        }
+        #p3{
+            background-image: url("fire4.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Language Switch -->
+    <div class="language-switch">
+        <button class="bg-red-600 text-white px-3 py-1 rounded-md hover:bg-red-700" onclick="toggleLanguage()">
+            हिंदी / EN
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-40">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-red-600">ARK FIRE CONTROL SYSTEM</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-red-600">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-red-600">Products</a>
+                    <a href="#services" class="text-gray-700 hover:text-red-600">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-red-600">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-red-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-gray-700">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-red-50">Home</a>
+            <a href="#products" class="block px-4 py-2 text-gray-700 hover:bg-red-50">Products</a>
+            <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-red-50">Services</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-red-50">About</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-red-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-16">
+        <div class="relative h-screen max-h-[600px] flex items-center" style="background-image: url('hero1.jpg');background-repeat: no-repeat;">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="container mx-auto px-4 z-10 text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4" id="hero-title">Protecting Lives with Advanced Fire Safety Solutions</h1>
+                <p class="text-xl mb-8" id="hero-subtitle">Your trusted partner in fire safety equipment and services across India</p>
+                <a href="#products" class="bg-white text-red-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">
+                    Explore Products
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" id="products-title">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-red-100" style="background-image: url('fire2.png');background-position: center; background-size: cover;background-size:70%; background-repeat: no-repeat;"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fire Extinguisher</h3>
+                        <p class="text-gray-600 mb-4">ABC Powder Type - 6KG</p>
+                        <p class="text-red-600 font-bold mb-4">₹2,750</p>
+                        <button class="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700">View Details</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-red-100" id="p2"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Smoke Detector</h3>
+                        <p class="text-gray-600 mb-4">Smart Detection</p>
+                        <p class="text-red-600 font-bold mb-4">₹2,499</p>
+                        <button class="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700">View Details</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-red-100" id="p3"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fire Alarm Panel</h3>
+                        <p class="text-gray-600 mb-4">4 Looping</p>
+                        <p class="text-red-600 font-bold mb-4">₹12,500</p>
+                        <button class="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" id="services-title">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="text-center p-6">
+                    <i class="bi bi-tools text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Installation</h3>
+                    <p class="text-gray-600 mb-4">Professional installation of fire safety equipment</p>
+                    <button class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700">Book Now</button>
+                </div>
+                <!-- Service 2 -->
+                <div class="text-center p-6">
+                    <i class="bi bi-gear text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Maintenance</h3>
+                    <p class="text-gray-600 mb-4">Regular maintenance and servicing</p>
+                    <button class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700">Book Now</button>
+                </div>
+                <!-- Service 3 -->
+                <div class="text-center p-6">
+                    <i class="bi bi-shield-check text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Inspection</h3>
+                    <p class="text-gray-600 mb-4">Thorough safety inspections and certifications</p>
+                    <button class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ARK FIRE CONTROL SYSTEM</h3>
+                    <p class="text-gray-400">Your trusted partner in fire safety solutions</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="bi bi-geo-alt"></i> Shop no 01, Vishwakarma Darshan bldg, Shankara Nagar Rd, Sonar Pada, Dombivli East, Dombivli, Maharashtra 421203</li>
+                        <li><i class="bi bi-telephone"></i> +91 93729 95150</li>
+                        <li><i class="bi bi-envelope"></i> arkfirecontrol@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-md text-gray-800">
+                        <button class="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 w-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 ARK FIRE CONTROL SYSTEM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Language Toggle
+        const translations = {
+            'hero-title': {
+                'en': 'Protecting Lives with Advanced Fire Safety Solutions',
+                'hi': 'उन्नत अग्नि सुरक्षा समाधानों के साथ जीवन की रक्षा'
+            },
+            'hero-subtitle': {
+                'en': 'Your trusted partner in fire safety equipment and services across India',
+                'hi': 'पूरे भारत में अग्नि सुरक्षा उपकरण और सेवाओं में आपका विश्वसनीय साथी'
+            },
+            'products-title': {
+                'en': 'Featured Products',
+                'hi': 'विशेष उत्पाद'
+            },
+            'services-title': {
+                'en': 'Our Services',
+                'hi': 'हमारी सेवाएं'
+            },
+            'product-1-title': {
+                'en': 'Fire Extinguisher',
+                'hi': 'आग बुझाने का यंत्र'
+            }
+        };
+
+        function toggleLanguage() {
+            const currentLang = document.body.getAttribute('lang');
+            const newLang = currentLang === 'en' ? 'hi' : 'en';
+            document.body.setAttribute('lang', newLang);
+
+            // Update text based on selected language
+            for (const key in translations) {
+                document.getElementById(key).textContent = translations[key][newLang];
+            }
+        }
+
+        // Default language is English
+        document.body.setAttribute('lang', 'en');
+    </script>
+</body>
+</html>
